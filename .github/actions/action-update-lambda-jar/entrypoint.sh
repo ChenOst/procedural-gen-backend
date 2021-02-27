@@ -8,8 +8,8 @@ configure_aws_credentials(){
 
 publish_function_code(){
 	echo "Deploying the code itself..."
-	wget https://github.com/ChenOst/procedural-gen-backend/raw/master/target/algorithms-1.0-SNAPSHOT-jar-with-dependencies.jar -O .
-	aws lambda update-function-code --function-name "${INPUT_LAMBDA_FUNCTION_NAME}" --zip-file fileb://algorithms-1.0-SNAPSHOT-jar-with-dependencies.jar
+	wget https://github.com/ChenOst/procedural-gen-backend/raw/master/target/algorithms-1.0-SNAPSHOT-jar-with-dependencies.jar -O ./code.jar
+	aws lambda update-function-code --function-name "${INPUT_LAMBDA_FUNCTION_NAME}" --zip-file fileb://code.jar
 }
 
 deploy_lambda_function(){
