@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="TestAlgorithms" time="0.127" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="TestAlgorithms" time="0.11" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,14 +64,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestAlgorithms" name="rrpRoomsAndRPC_CorridorsTest" time="0.031"/>
-  <testcase classname="TestAlgorithms" name="rrpRoomsAndRPC_RoomsTest" time="0.017"/>
-  <testcase classname="TestAlgorithms" name="rrpRoomsAndDW_RoomsTest" time="0.008"/>
-  <testcase classname="TestAlgorithms" name="rrpRoomsAndDW_CorridorsTest" time="0.008"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndRPC_RoomsTest" time="0.011"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndRPC_CorridorsTest" time="0.007"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndDW_RoomsTest" time="0.008"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndDW_CorridorsTest" time="0.01"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndBspCorridors_CorridorsTest" time="0.026"/>
-  <testcase classname="TestAlgorithms" name="bspRoomsAndBspCorridors_RoomsTest" time="0.001"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndRPC_RoomsTest" time="0.028"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndRPC_CorridorsTest" time="0.016"/>
+  <testcase classname="TestAlgorithms" name="rrpRoomsAndRPC_RoomsTest" time="0.007"/>
+  <testcase classname="TestAlgorithms" name="rrpRoomsAndRPC_CorridorsTest" time="0.007"/>
+  <testcase classname="TestAlgorithms" name="rrpRoomsAndDW_RoomsTest" time="0.007"/>
+  <testcase classname="TestAlgorithms" name="rrpRoomsAndDW_CorridorsTest" time="0.006"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndDW_CorridorsTest" time="0.006"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndDW_RoomsTest" time="0.007"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndBspCorridors_RoomsTest" time="0.019"/>
+  <testcase classname="TestAlgorithms" name="bspRoomsAndBspCorridors_CorridorsTest" time="0.007"/>
 </testsuite>
