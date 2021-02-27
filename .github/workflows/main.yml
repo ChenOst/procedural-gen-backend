@@ -1,0 +1,20 @@
+name: Deploy to Lambda
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Deploy code to Lambda
+      uses: ./.github/actions/action-update-lambda-jar
+      with:
+        lambda_layer_arn: 'arn:aws:lambda:eu-west-2:407779713835:function:createGameLevel'
+        lambda_function_name: ${{ secrets.LAMBDA_FUNCTION_NAME }}
+        lambda_region: 'eu-west-2'
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
