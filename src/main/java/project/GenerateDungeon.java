@@ -44,11 +44,13 @@ public class GenerateDungeon{
 		String[][] rrpAnddw = dw.generateDungeon(new RRP(100, 10, 10, 20, 15).getRooms(), dungeonSize, 10);
 
 		Map<String, Object> data = new HashMap<>();
-		data.put( "BSP Rooms and RPC", bspAndrpc);
-		data.put( "BSP Rooms and BSP Corridors", bspAndbsp);
-		data.put( "BSP Rooms and DW", bspAnddw);
-		data.put( "RRP and RPC", rrpAndrpc);
-		data.put( "RRP and DW", rrpAnddw);
+
+		// Used in client side as enum - can't have white spaces
+		data.put( "BSPRoomsAndRPC", bspAndrpc);
+		data.put( "BSPRoomsAndBSPCorridors", bspAndbsp);
+		data.put( "BSPRoomsAndDW", bspAnddw);
+		data.put( "RRPAndRPC", rrpAndrpc);
+		data.put( "RRPAndDW", rrpAnddw);
 
 		JSONObject obj = new JSONObject();
 
