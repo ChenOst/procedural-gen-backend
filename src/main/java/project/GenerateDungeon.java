@@ -20,12 +20,11 @@ import java.util.Map;
 public class GenerateDungeon{
 
 	public static void main(String[] args) {
-
 	}
 
 	public JSONObject handleRequest(Object input, Context context) {
 
-		int dungeonSize = 100;
+		int dungeonSize = 50;
 
 		Gson gson = new Gson();
 
@@ -40,8 +39,8 @@ public class GenerateDungeon{
 		rpc = new RPC();
 		dw = new DW();
 
-		String[][] rrpAndrpc = rpc.generateDungeon(new RRP(100, 10, 10, 20, 15).getRooms(), dungeonSize);
-		String[][] rrpAnddw = dw.generateDungeon(new RRP(100, 10, 10, 20, 15).getRooms(), dungeonSize, 10);
+		String[][] rrpAndrpc = rpc.generateDungeon(new RRP(dungeonSize, 10, 10, 20, 15).getRooms(), dungeonSize);
+		String[][] rrpAnddw = dw.generateDungeon(new RRP(dungeonSize, 10, 10, 20, 15).getRooms(), dungeonSize, 10);
 
 		Map<String, Object> data = new HashMap<>();
 
