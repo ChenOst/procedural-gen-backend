@@ -3,7 +3,7 @@ package components;
 import java.util.Random;
 
 public class Rectangle {
-	private int MIN_SIZE = 10;
+	private int MIN_SIZE = 7;
 	private static Random rnd = new Random(); 
 
 	private int top, left, width, height;

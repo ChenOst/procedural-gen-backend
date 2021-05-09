@@ -39,8 +39,8 @@ public class GenerateDungeon{
 		rpc = new RPC();
 		dw = new DW();
 
-		String[][] rrpAndrpc = rpc.generateDungeon(new RRP(dungeonSize, 10, 10, 20, 15).getRooms(), dungeonSize);
-		String[][] rrpAnddw = dw.generateDungeon(new RRP(dungeonSize, 10, 10, 20, 15).getRooms(), dungeonSize, 10);
+		String[][] rrpAndrpc = rpc.generateDungeon(new RRP(dungeonSize, 10, 7, 15, 15).getRooms(), dungeonSize);
+		String[][] rrpAnddw = dw.generateDungeon(new RRP(dungeonSize, 10, 7, 15, 15).getRooms(), dungeonSize, 10);
 
 		Map<String, Object> data = new HashMap<>();
 
@@ -57,5 +57,14 @@ public class GenerateDungeon{
 		obj.put("body", gson.toJson(data));
 
 		return obj;
+	}
+
+	private static void Print(String[][] mat){
+		for (int i=0 ; i<mat.length ; i++){
+			for (int j=0; j< mat[i].length; j++){
+				System.out.print(mat[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 }
