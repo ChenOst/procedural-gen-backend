@@ -1,0 +1,2 @@
+# Mark HTML files as C# so we don't have wrong language detection
+*.html linguist-language=Java
